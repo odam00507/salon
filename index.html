@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Booth Rentals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .hero {
+            padding: 80px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        h2 {
+            font-weight: 600;
+        }
+        p, li {
+            font-weight: 400;
+        }
+        button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        button:hover {
+            background: #e05a50;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 50px 20px;
+            transition: all 0.5s ease-in-out;
+        }
+        .why-choose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .why-choose img {
+            max-width: 40%; /* Limit image size */
+            margin-left: 20px;
+        }
+        .how-it-works {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .how-it-works img {
+            max-width: 40%; /* Limit image size */
+            margin-right: 20px;
+        }
+        .listing {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .listing:hover {
+            transform: translateY(-5px);
+        }
+        .featured-listings {
+            background: url('https://raw.githubusercontent.com/odam00507/salon/refs/heads/recources/3.webp') no-repeat center center/cover;
+            background-size: cover;
+            padding: 50px 20px;
+        }
+        .featured-listings h2 {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 30%;
+            max-width: 500px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-left: 5px solid #ff6f61;
+            margin: 20px auto;
+            width: 70%;
+        }
+        footer {
+            padding: 30px;
+            background: #333;
+            color: white;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>🚀 Find Your Dream Salon Booth in Minutes!</h1>
+        <p>Whether you’re a salon owner renting out booths or a stylist looking for the perfect space, our platform makes it easy to connect and thrive in the beauty industry.</p>
+        <button>List Your Booth</button>
+        <button>Find a Booth</button>
+    </header>
+    
+    <section class="why-choose">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✅ Hassle-Free Listings</li>
+            <li>✅ Verified Spaces</li>
+            <li>✅ Flexible Rentals</li>
+            <li>✅ No Hidden Fees</li>
+        </ul>
+        <button>Get Started Today</button>
+        <img src="https://raw.githubusercontent.com/odam00507/salon/refs/heads/recources/1.webp" alt="Salon Booth" />
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div>
+            <ol>
+                <li>Salon Owners: Create a listing, set your price, and connect with stylists.</li>
+                <li>Stylists: Browse available booths by location, amenities, and pricing.</li>
+                <li>Book & Work: Secure your rental and start servicing clients immediately.</li>
+            </ol>
+            <img src="https://raw.githubusercontent.com/odam00507/salon/refs/heads/recources/2.webp" alt="How It Works" />
+        </div>
+        <button>List Your Booth</button>
+        <button>Find a Booth</button>
+    </section>
+
+    <section class="featured-listings">
+        <h2>Featured Listings</h2>
+        <div class="listing">
+            <p>📍 Luxury Salon in Los Angeles – $250/week</p>
+        </div>
+        <div class="listing">
+            <p>📍 Downtown NYC Salon Space – $100/day</p>
+        </div>
+        <div class="listing">
+            <p>📍 Miami Beauty Studio – $300/month</p>
+        </div>
+        <button>See More Listings</button>
+    </section>
+
+    <section class="testimonials">
+        <h2>Success Stories</h2>
+        <blockquote>💬 "This platform helped me find a high-end salon space where I could grow my business and work on my own terms." – Jessica R.</blockquote>
+        <blockquote>💬 "I listed my available booths and found reliable stylists within a week!" – Sarah M.</blockquote>
+        <button>Join Now</button>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>💡 How much does it cost to list a booth? - Listing is free.</p>
+        <p>💡 Can I rent a booth for just a few days? - Yes, we offer flexible options.</p>
+        <button>View More FAQs</button>
+    </section>
+
+    <footer>
+        <h2>Ready to Get Started?</h2>
+        <button>List Your Booth</button>
+        <button>Find a Booth</button>
+        <p>📞 Need help? Contact Us</p>
+    </footer>
+</body>
+</html>
